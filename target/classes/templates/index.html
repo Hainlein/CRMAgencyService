@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" dir="ltr" lang="en-US">
+<head>
+    <!-- Document Meta-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- IE Compatibility Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="/images/favicon/favicon.png" rel="icon"/>
+    <!--  Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap" rel="stylesheet" type="text/css"/>
+    <!-- Stylesheets-->
+    <link href="/css/vendor.css" rel="stylesheet"/>
+    <link href="/css/style.css" rel="stylesheet"/>
+    <!--
+    Document Title
+    =============================================
+    -->
+    <title>Digital Creative Agency</title>
+</head>
+<body class="body-scroll">
+<!--
+Document Wrapper
+=============================================
+-->
+<div class="wrapper clearfix" id="wrapper">
+    <!--
+    Header
+    =============================================
+    -->
+    <header class="header header-transparent header-sticky">
+        <nav class="navbar navbar-sticky navbar-expand-lg" id="primary-menu">
+            <div class="container"> <a class="logo navbar-brand" href="index.html"><img class="logo logo-dark" src="/images/logo/logo-dark.png" alt="Leland Logo"/><img class="logo logo-light" src="/images/logo/logo-light.png" alt="Leland Logo"/></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" data-scroll="scrollTo" href="#hero">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#feature">Услуги</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#services">Преимущества</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#pricing">Портфолио</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#testimonials">Цены</a></li>
+                        <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#cta">Отзывы</a></li>
+                    </ul>
+                    <div class="module-container">
+                        <!--module-btn-->
+                        <div class="module module-cta"><a class="btn btn--white btn--arrows" href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal"> <span>Связаться с нами <i class="icon-right-arrow"></i></span></a></div>
+                    </div>
+                    <!-- End Module Container  -->
+                </div>
+                <!-- End .nav-collapse-->
+            </div>
+            <!-- End .container-->
+        </nav>
+        <!-- End .navbar-->
+    </header>
+    <!-- End Header-->
+    <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactUsModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popup-contact-form">
+                        <div class="heading heading-5">
+                            <div class="heading-title">Начните свой новый проект с нами</div>
+                            <div class="heading-desc">Опишите то, что хотите получить, чтобы мы смогли предложить Вам лучшие решения.</div>
+                        </div>
+                        <div class="contact-body">
+                            <form class="contactForm mb-0" method="post" action="/contact">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input class="form-control" type="text" name="contact-name" placeholder="Ваше имя" required="required"/>
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="form-control" type="text" name="contact-email" placeholder="Ваша почта" required="required"/>
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="form-control" type="text" name="contact-phone" placeholder="Ваш телефон" required="required"/>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" name="comment" rows="4" placeholder="Ваше сообщение" required="required"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn--block btn btn--primary btn--arrows mt-20 mb-20"><span>Отправить!<i class="icon-right-arrow"></i></span></button>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="notice">Наши менеджеры свяжутся с Вами в ближайшее время.</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="contact-result"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- End .contact-body-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start hero #1-->
+    <section class="hero bg-gradient" id="hero">
+        <div class="bg-section"><img src="/images/background/bg-gradient.svg" alt="background"/></div>
+        <div class="container">
+            <div class="hero-cotainer text--center">
+                <div class="row">
+                    <div class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+                        <div class="hero-content">
+                            <div class="hero-headline">«FLOW COMMUNICATIONS»: Рекламное агенство полного цикла</div>
+                            <div class="hero-bio">Ищем нестандартные идеи, разрабатываем интересные концепции, отслеживаем новинки индустрии событий. При этом всегда работаем на результат и сопровождаем проект от встречи с заказчиком – до итоговой отчетности.
+                                .</div>
+                            <div class="hero-action text-center"><a class="btn btn--primary btn--rounded btn--arrows mx-auto" href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal"><span>Оставьте заявку <i class="icon-right-arrow"></i></span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End .row-->
+            </div>
+            <!-- End .hero-content-->
+        </div>
+        <!-- End .container	-->
+        <div class="mockup">
+            <div class="container">
+                <div class="row">
+                    <div class="col"><img class="img-fluid" src="/images/illustration/illustration-1.png" alt="illustration vector"/></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End #hero   -->
+    <!-- Start Clients-->
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+                    <div class="heading text--center">
+                        <p class="heading-desc"> Нам доверяют мировые и украинские бренды и компании </p>
+                    </div>
+                </div>
+                <!-- End .col-lg-6 -->
+            </div>
+            <!-- End .row  -->
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="owl-carousel " data-slide="5" data-slide-res="3" data-autoplay="true" data-nav="false" data-dots="false" data-space="30" data-loop="true" data-speed="800">
+                        <!--  Client #1   -->
+                        <div class="client"><img src="/images/clients/client-1.png" alt="client-pic"/></div>
+                        <!--  Client #2   -->
+                        <div class="client"><img src="/images/clients/client-2.png" alt="client-pic"/></div>
+                        <!--  Client #3-->
+                        <div class="client"><img src="/images/clients/client-3.png" alt="client-pic"/></div>
+                        <!--  Client #4-->
+                        <div class="client"><img src="/images/clients/client-4.png" alt="client-pic"/></div>
+                        <!--  Client #5-->
+                        <div class="client"><img src="/images/clients/client-5.png" alt="client-pic"/></div>
+                        <!--  Client #6-->
+                        <div class="client"><img src="/images/clients/client-6.png" alt="client-pic"/></div>
+                    </div>
+                </div>
+                <!-- End .row-->
+            </div>
+            <div class="divider-2"></div>
+        </div>
+        <!-- End .container-->
+    </section>
+    <!-- End #clients-->
+    <!-- Start Feature #1-->
+    <section class="features text-center" id="feature">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <div class="heading heading-1 text--center">
+                        <h2 class="heading-title">Предлагаем лучшие рекламные решения</h2>
+                        <p class="heading-desc">На протяжении 20 лет мы организовываем зрелищные яркие ивенты. За это время уже провели 720 мероприятий по всей территории Украины.
+                        </p>
+                    </div>
+                </div>
+                <!-- End .col-lg-6 -->
+            </div>
+            <!-- End .row  -->
+            <div class="row">
+                <!-- Panel #1  -->
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <div class="feature-panel">
+                        <div class="feature-icon"><i class="flaticon-archive-3"></i></div>
+                        <div class="feature-content">
+                            <h3>Стимулирование продаж</h3>
+                            <p>BTL ― тот самый спусковой крючок, которого не хватает для увеличения продаж вашей продукции или услуги. </p>
+                        </div>
+                    </div>
+                    <!-- .feature-panel end  -->
+                </div>
+                <!-- .col-md-12 end  -->
+                <!-- Panel #2  -->
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <div class="feature-panel active">
+                        <div class="feature-icon"><i class="flaticon-albums"></i></div>
+                        <div class="feature-content">
+                            <h3>Организация событий</h3>
+                            <p>Всегда находимся в поиске новых идей, разрабатываем нестандартные концепции мероприятий разного масштаба.</p>
+                        </div>
+                    </div>
+                    <!-- .feature-panel end  -->
+                </div>
+                <!-- .col-md-12 end  -->
+                <!-- Panel #3  -->
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <div class="feature-panel">
+                        <div class="feature-icon"><i class="flaticon-albums"></i></div>
+                        <div class="feature-content">
+                            <h3>Сувенирная продукция</h3>
+                            <p>Индивидуальный подбор продукции, нанесение брендирования, разработка фирменных сувениров по оптимальной цене.</p>
+                        </div>
+                    </div>
+                    <!-- .feature-panel end  -->
+                </div>
+                <!-- .col-md-12 end  -->
+                <!-- Panel #4  -->
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <div class="feature-panel">
+                        <div class="feature-icon"><i class="flaticon-albums"></i></div>
+                        <div class="feature-content">
+                            <h3>Outdoor-реклама</h3>
+                            <p>Индивидуальный подбор плоскостей и экономически обоснованные предложения — залог эффективности кампании.</p>
+                        </div>
+                    </div>
+                    <!-- .feature-panel end  -->
+                </div>
+                <!-- .col-md-12 end  -->
+                <!-- Panel #5  -->
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <div class="feature-panel">
+                        <div class="feature-icon"><i class="flaticon-albums"></i></div>
+                        <div class="feature-content">
+                            <h3>Видео-production</h3>
+                            <p>В рамках установленного бюджета мы сделаем все для разработки уникального рекламного видео, нацеленного на результат.</p>
+                        </div>
+                    </div>
+                    <!-- .feature-panel end  -->
+                </div>
+                <!-- .col-md-12 end  -->
+                <!-- Panel #6  -->
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <div class="feature-panel">
+                        <div class="feature-icon"><i class="flaticon-fingerprint"></i></div>
+                        <div class="feature-content">
+                            <h3>PR-коммуникации</h3>
+                            <p>Предлагаем комплексные решения и отдельные активности различных направлений связей с общественностью.</p>
+                        </div>
+                    </div>
+                    <!-- .feature-panel end  -->
+
+                </div>
+                <!-- .col-md-12 end  -->
+            </div>
+            <!-- End .row  -->
+        </div>
+        <!-- End .container  -->
+    </section>
+
+    <!-- CONTINUE HERE -->
+    <!--   Footer    -->
+    <footer class="footer footer-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 text--center">
+                    <div class="footer--copyright"><span>All rights reserved.</span></div>
+                </div>
+            </div>
+        </div>
+        <!-- End .container  -->
+    </footer>
+</div>
+<!-- End #wrapper   -->
+<!--
+Footer Scripts
+=============================================
+-->
+<script src="/js/vendor/jquery-3.4.1.min.js"></script>
+<script src="/js/vendor.js"></script>
+<script src="/js/functions.js"></script>
+</body>
+</html>
